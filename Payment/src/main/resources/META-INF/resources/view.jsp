@@ -2,7 +2,7 @@
 
 <div style="background-color: rgb(158, 2, 2);color:#fff;">
         <div class="container p-5">
-            <a style="color:#fff;" href="/checkout">Kembali ke checkout</a>
+            <a style="color:#fff;" href="/checkout.html.html">Kembali ke checkout</a>
             <h1 class="mt-4">Pembayaran</h1>
 
         </div>
@@ -58,7 +58,7 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-between align-items-center">
-                        <button data-toggle="collapse" data-target="#collapseKreditPro" style="color: rgb(68, 68, 68);" class="btn btn-link">LIHAT DETAIL</button>
+                        <button type="button" onclick="collapse('collapseKreditPro')" style="color: rgb(68, 68, 68);" class="btn btn-link">LIHAT DETAIL</button>
                         <button class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Selesaikan</button>
                     </div>
                 </div>
@@ -83,8 +83,17 @@
                             <div class="card mb-3">
                                 <div class="card-body">
                                     <div class="btn-group mb-4" role="group" aria-label="Basic example">
-                                        <button type="button" class="btn btn-danger">Tunai</button>
-                                        <button type="button" class="btn btn-light">BNI</button>
+                                        <button onclick="tutup('collapseBNI')" type="button" class="btn btn-danger">Tunai</button>
+                                        <button onclick="buka('collapseBNI')" type="button" class="btn btn-light">BNI</button>
+                                    </div>
+                                    <div class="collapse" id="collapseBNI">
+                                        <small class="text-muted">Ke nomor rekening Tujuan</small>
+                                        <br>
+                                        <p><b>1111111111111</b></p>
+                                        <p>a/n bang nando</p>
+                                        <a href="javascript:void(0)"><i class="fa fa-files-o"></i> Salin Rekening</a>
+                                        <br>
+                                        <img src="https://qa.aksestoko.id//assets/uploads//bank_logo/bni.png" style="max-width: 100px;" alt="">
                                     </div>
                                     <div>
                                         <h6>Rencana Pelunasan</h6>
@@ -104,7 +113,7 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-between align-items-center">
-                        <button data-toggle="collapse" data-target="#collapseTempo" style="color: rgb(68, 68, 68);" class="btn btn-link">LIHAT DETAIL</button>
+                        <button type="button" onclick="collapse('collapseTempo')" style="color: rgb(68, 68, 68);" class="btn btn-link">LIHAT DETAIL</button>
                         <button class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Selesaikan</button>
                     </div>
                 </div>
@@ -123,7 +132,7 @@
                     </div>
                 </div>
                 <div class="card-footer">
-                    <div class="collapse" id="collapseTempo">
+                    <div class="collapse" id="collapseSblm">
                         <div>
                             <h6>Bank</h6>
                             <div class="card mb-3">
@@ -137,7 +146,7 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-between align-items-center">
-                        <button data-toggle="collapse" data-target="#collapseTempo" style="color: rgb(68, 68, 68);" class="btn btn-link">LIHAT DETAIL</button>
+                        <button type="button" onclick="collapse('collapseSblm')" style="color: rgb(68, 68, 68);" class="btn btn-link">LIHAT DETAIL</button>
                         <button class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Selesaikan</button>
                     </div>
                 </div>
@@ -145,7 +154,7 @@
         </div>
     </div>
 
-    <!-- Modal -->
+    <!-- Modal Konfirmasi -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -162,11 +171,25 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
-                    <a id="konfirmPayment" href="javascript:void(0)" type="button" class="btn btn-danger">Iya</a>
+                    <a href="ordersuccess.html" type="button" class="btn btn-danger">Iya</a>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        function collapse(cola) {
+            $('#' + cola).collapse('toggle')
+        }
+
+        function tutup(cola) {
+            $('#' + cola).collapse('hide')
+        }
+
+        function buka(cola) {
+            $('#' + cola).collapse('show')
+        }
+    </script>
     
 <script>
 	document.getElementById('konfirmPayment').addEventListener('click', function() {
