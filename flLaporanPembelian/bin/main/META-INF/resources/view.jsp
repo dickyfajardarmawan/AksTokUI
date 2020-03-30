@@ -182,3 +182,9 @@
                 </div>
             </div>
         </div>
+        
+        <script>
+	setTimeout(function(){ 
+		navFL();
+	}, 1000);
+</script>
