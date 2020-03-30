@@ -1,28 +1,30 @@
 <%@ include file="/init.jsp"%>
 
 <style>
-#partitioned {
-	padding-left: 15px;
-	letter-spacing: 42px;
-	border: 0;
-	background-image: linear-gradient(to left, black 70%, rgba(255, 255, 255, 0)
-		0%);
-	background-position: bottom;
-	background-size: 50px 1px;
-	background-repeat: repeat-x;
-	background-position-x: 35px;
-	width: 220px;
-	min-width: 220px;
-}
+input {
+		width: 30px;
+		height: 50px;
+		background-color: lighten($BaseBG, 5%);
+		border: none;
+		border-bottom: 1px solid #000;
+		line-height: 50px;
+		text-align: center;
+		font-size: 24px;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 200;
+		color: #000;
+		margin: 0 2px;
+	}
+	.splitter {
+		padding: 0 5px;
+		color: #000;
+		font-size: 24px;
+	}
 
-#divInner {
-	left: 0;
-	position: sticky;
-}
-
-#divOuter {
-	width: 190px;
-	overflow: hidden;
+.prompt {
+	margin-bottom: 20px;
+	font-size: 20px;
+	color: white;
 }
 </style>
 
@@ -108,11 +110,17 @@
 					</div>
 					<div class="modal-body text-center">
 						<p>Kode OTP sudah dikirim ke hp mu</p>
-						<h6>silahkan masukkan 4 digit nomor OTP</h6>
+						<h6>silahkan masukkan 6 digit nomor OTP</h6>
 						<div class="mx-auto my-3" id="divOuter">
-							<div id="divInner">
-								<input id="partitioned" type="text" maxlength="4" />
-							</div>
+							<form method="get" class="digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+								<input type="text" id="digit-1" name="digit-1" data-next="digit-2" />
+								<input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+								<input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+								<span class="splitter">&ndash;</span>
+								<input type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" />
+								<input type="text" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4" />
+								<input type="text" id="digit-6" name="digit-6" data-previous="digit-5" />
+							</form>
 						</div>
 						<small class="text-muted">Kode OTP belum Masuk ? <a
 							style="color: #830000;" href="javascript:void(0)">Kirim Ulang
@@ -131,29 +139,28 @@
 						document.getElementById('footer').innerHTML = '';
 					}, 1000);
 
-			var obj = document.getElementById('partitioned');
-			obj.addEventListener('keydown', stopCarret);
-			obj.addEventListener('keyup', stopCarret);
-
-			function stopCarret() {
-				if (obj.value.length > 3) {
-					setCaretPosition(obj, 3);
-				}
-			}
-
-			function setCaretPosition(elem, caretPos) {
-				if (elem != null) {
-					if (elem.createTextRange) {
-						var range = elem.createTextRange();
-						range.move('character', caretPos);
-						range.select();
-					} else {
-						if (elem.selectionStart) {
-							elem.focus();
-							elem.setSelectionRange(caretPos, caretPos);
-						} else
-							elem.focus();
+			$('.digit-group').find('input').each(function() {
+				$(this).attr('maxlength', 1);
+				$(this).on('keyup', function(e) {
+					var parent = $($(this).parent());
+					
+					if(e.keyCode === 8 || e.keyCode === 37) {
+						var prev = parent.find('input#' + $(this).data('previous'));
+						
+						if(prev.length) {
+							$(prev).select();
+						}
+					} else if((e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 65 && e.keyCode <= 90) || (e.keyCode >= 96 && e.keyCode <= 105) || e.keyCode === 39) {
+						var next = parent.find('input#' + $(this).data('next'));
+						
+						if(next.length) {
+							$(next).select();
+						} else {
+							if(parent.data('autosubmit')) {
+								parent.submit();
+							}
+						}
 					}
-				}
-			}
+				});
+			});
 		</script>
