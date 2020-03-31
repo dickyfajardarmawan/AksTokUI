@@ -123,7 +123,7 @@ input {
 							</form>
 						</div>
 						<small class="text-muted">Kode OTP belum Masuk ? <a
-							style="color: #830000;" href="javascript:void(0)">Kirim Ulang
+							style="color: #830000;" onclick="kirimUlang()" href="javascript:void(0)">Kirim Ulang
 								Kode</a></small> <br> <br>
 						<button class="btn btn-danger">Verifikasi Sekarang</button>
 					</div>
@@ -132,6 +132,16 @@ input {
 		</div>
 
 		<script>
+		
+		function kirimUlang() {
+			document.getElementById('digit-1').value = "";
+			document.getElementById('digit-2').value = "";
+			document.getElementById('digit-3').value = "";
+			document.getElementById('digit-4').value = "";
+			document.getElementById('digit-5').value = "";
+			document.getElementById('digit-6').value = "";
+		}
+		
 			setTimeout(
 					function() {
 						document.body.style.backgroundImage = "url(https://qa.aksestoko.id/themes/aksestoko/assets/img/bg-sign.jpg)";

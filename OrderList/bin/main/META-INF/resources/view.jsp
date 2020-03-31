@@ -2,10 +2,8 @@
 
 <div style="background-color: rgb(158, 2, 2);color:#fff;">
         <div class="container p-5">
-            <a style="color:#fff;" href="/daftarProduk.html">Kembali ke Daftar Produk</a>
+            <a style="color:#fff;" href="/home">Kembali</a>
             <h1>Pemesanan</h1>
-            <p>Pada Distributor Forca POS <a href="javascript:void(0)" data-toggle="modal" data-target="#modalDistributor"><i style="color:#fff;" class="fa fa-info-circle"></i></a></p>
-            <input class="form-control py-4" type="text" placeholder="Cari Produk ...">
         </div>
     </div>
 
