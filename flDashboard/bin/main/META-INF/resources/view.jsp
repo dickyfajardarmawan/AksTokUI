@@ -2,13 +2,13 @@
 
 <style>
 .container-fluid:hover {
-    background-color: #696969;
-    cursor: pointer;
+	background-color: #696969;
+	cursor: pointer;
 }
 
 .sidenav3 a:hover {
-    color: #f1f1f1;
-    background-color: #696969;
+	color: #f1f1f1;
+	background-color: #696969;
 }
 </style>
 
@@ -20,8 +20,6 @@
 				data-toggle="modal" data-target="#modalDistributor"><i
 				style="color: #fff;" class="fa fa-info-circle"></i></a>
 		</p>
-		<input class="form-control py-4" type="text"
-			placeholder="Cari Produk ...">
 	</div>
 </div>
 
@@ -43,7 +41,8 @@
 			<div class="card">
 				<div class="card-body">
 					<div class="progress text-center" style="height: 70px;">
-						<div class="progress-bar " role="progressbar " style="width: 80%;background-color:#830000;"
+						<div class="progress-bar " role="progressbar "
+							style="width: 80%; background-color: #830000;"
 							aria-valuenow="80 " aria-valuemin="0 " aria-valuemax="100 ">
 							<div class=""
 								style="position: absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
@@ -127,134 +126,130 @@
 
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 <script type="text/javascript">
+	window.onload = function() {
 
-setTimeout(function(){ 
-	navFL();
-}, 1000);
+		var chart = new CanvasJS.Chart("chartContainer", {
+			theme : "light2", // "light2", "dark1", "dark2"
+			animationEnabled : false, // change to true		
+			title : {
+				text : ""
+			},
+			dataPointWidth : 30,
+			data : [ {
+				// Change type to "bar", "area", "spline", "pie",etc.
+				type : "column",
+				color : "#830000",
+				dataPoints : [ {
+					label : "Semen 1",
+					y : 10
+				}, {
+					label : "Semen 2",
+					y : 15
+				}, {
+					label : "Semen 3",
+					y : 25
+				}, {
+					label : "Semen 4",
+					y : 30
+				}, {
+					label : "Semen 5",
+					y : 28
+				} ]
+			} ]
+		});
 
+		var chart2 = new CanvasJS.Chart(
+				"chartContainer2",
+				{
+					animationEnabled : true,
+					title : {
+						text : ""
+					},
+					axisY : {
+						valueFormatString : "#0,.",
+						suffix : "k"
+					},
+					axisX : {
+						title : "Months After Launch"
+					},
+					toolTip : {
+						shared : true
+					},
+					data : [
+							{
+								type : "stackedArea",
+								showInLegend : true,
+								toolTipContent : "<span style=\"color:#4F81BC\"><strong>{name}: </strong></span> {y}",
+								name : "Berhasil",
+								dataPoints : [ {
+									x : 1,
+									y : 3000
+								}, {
+									x : 2,
+									y : 7000
+								}, {
+									x : 3,
+									y : 10000
+								}, {
+									x : 4,
+									y : 14000
+								}, {
+									x : 5,
+									y : 23000
+								}, {
+									x : 6,
+									y : 31000
+								}, {
+									x : 7,
+									y : 42000
+								}, {
+									x : 8,
+									y : 56000
+								}, {
+									x : 9,
+									y : 64000
+								}, {
+									x : 10,
+									y : 81000
+								}, {
+									x : 11,
+									y : 105000
+								} ]
+							},
+							{
+								type : "stackedArea",
+								name : "Gagal",
+								toolTipContent : "<span style=\"color:#C0504E\"><strong>{name}: </strong></span> {y}<br><b>Total:<b> #total",
+								showInLegend : true,
+								dataPoints : [ {
+									x : 4,
+									y : 4000
+								}, {
+									x : 5,
+									y : 6000
+								}, {
+									x : 6,
+									y : 9000
+								}, {
+									x : 7,
+									y : 14000
+								}, {
+									x : 8,
+									y : 21000
+								}, {
+									x : 9,
+									y : 31000
+								}, {
+									x : 10,
+									y : 46000
+								}, {
+									x : 11,
+									y : 61000
+								} ]
+							} ]
+				});
 
-	
-            window.onload = function() {
-
-                var chart = new CanvasJS.Chart("chartContainer", {
-                    theme: "light2", // "light2", "dark1", "dark2"
-                    animationEnabled: false, // change to true		
-                    title: {
-                        text: ""
-                    },
-                    dataPointWidth: 30,
-                    data: [{
-                        // Change type to "bar", "area", "spline", "pie",etc.
-                        type: "column",
-                        color: "#830000",
-                        dataPoints: [{
-                            label: "Semen 1",
-                            y: 10
-                        }, {
-                            label: "Semen 2",
-                            y: 15
-                        }, {
-                            label: "Semen 3",
-                            y: 25
-                        }, {
-                            label: "Semen 4",
-                            y: 30
-                        }, {
-                            label: "Semen 5",
-                            y: 28
-                        }]
-                    }]
-                });
-
-                var chart2 = new CanvasJS.Chart("chartContainer2", {
-                    animationEnabled: true,
-                    title: {
-                        text: ""
-                    },
-                    axisY: {
-                        valueFormatString: "#0,.",
-                        suffix: "k"
-                    },
-                    axisX: {
-                        title: "Months After Launch"
-                    },
-                    toolTip: {
-                        shared: true
-                    },
-                    data: [{
-                        type: "stackedArea",
-                        showInLegend: true,
-                        toolTipContent: "<span style=\"color:#4F81BC\"><strong>{name}: </strong></span> {y}",
-                        name: "Berhasil",
-                        dataPoints: [{
-                            x: 1,
-                            y: 3000
-                        }, {
-                            x: 2,
-                            y: 7000
-                        }, {
-                            x: 3,
-                            y: 10000
-                        }, {
-                            x: 4,
-                            y: 14000
-                        }, {
-                            x: 5,
-                            y: 23000
-                        }, {
-                            x: 6,
-                            y: 31000
-                        }, {
-                            x: 7,
-                            y: 42000
-                        }, {
-                            x: 8,
-                            y: 56000
-                        }, {
-                            x: 9,
-                            y: 64000
-                        }, {
-                            x: 10,
-                            y: 81000
-                        }, {
-                            x: 11,
-                            y: 105000
-                        }]
-                    }, {
-                        type: "stackedArea",
-                        name: "Gagal",
-                        toolTipContent: "<span style=\"color:#C0504E\"><strong>{name}: </strong></span> {y}<br><b>Total:<b> #total",
-                        showInLegend: true,
-                        dataPoints: [{
-                            x: 4,
-                            y: 4000
-                        }, {
-                            x: 5,
-                            y: 6000
-                        }, {
-                            x: 6,
-                            y: 9000
-                        }, {
-                            x: 7,
-                            y: 14000
-                        }, {
-                            x: 8,
-                            y: 21000
-                        }, {
-                            x: 9,
-                            y: 31000
-                        }, {
-                            x: 10,
-                            y: 46000
-                        }, {
-                            x: 11,
-                            y: 61000
-                        }]
-                    }]
-                });
-
-                chart.render();
-                chart2.render();
-            }
-
-        </script>
+		chart.render();
+		chart2.render();
+	}
+</script>
