@@ -18,6 +18,25 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
+.centered h1 {
+	font-size: 50px;
+	color: #fff;
+}
+
+.centered p {
+	font-size: 20px;
+	color: rgb(201, 201, 201);
+}
+
+@media only screen and (max-width: 600px) {
+	.centered h1 {
+		font-size: 20px;
+	}
+	.centered p {
+		font-size: 14px;
+	}
+}
 </style>
 
 <div class="kontener">
@@ -25,11 +44,9 @@
 		src="https://qa.aksestoko.id/themes/aksestoko/assets//img/bg-masthead.jpg"
 		alt="Snow" style="width: 100%;">
 	<div class="centered">
-		<h1 style="font-size: 50px; color: #fff;" class="text-center">CEPAT.
-			MUDAH. LEBIH MENGUNTUNGKAN.</h1>
-		<p style="font-size: 20px; color: rgb(201, 201, 201);">Selamat
-			datang di Solusi Digital Semen Indonesia. Segera daftar dengan ID
-			Bisnis Kokoh Anda!</p>
+		<h1 class="text-center">CEPAT. MUDAH. LEBIH MENGUNTUNGKAN.</h1>
+		<p>Selamat datang di Solusi Digital Semen Indonesia. Segera daftar
+			dengan ID Bisnis Kokoh Anda!</p>
 		<a class="btn btn-danger" href="/signup">DAFTAR SEKARANG</a>
 	</div>
 </div>
