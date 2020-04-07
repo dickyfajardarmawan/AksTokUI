@@ -1,11 +1,10 @@
 <%@ include file="/init.jsp" %>
 
 <div style="background-color: rgb(158, 2, 2);color:#fff;">
-        <div class="container text-center p-5">
-            <a class="btn btn-light" href="index.html">Kembali</a>
-            <h1>Bagaimana Kami Bisa Membantu Anda ?</h1>
+        <div class="container p-5">
+            <h1 class="mb-5"><a style="color:#fff" href="/akun"><i class="fa fa-chevron-circle-left"></i></a> Bagaimana Kami Bisa Membantu Anda ?</h1>
             <input class="form-control py-4" type="text" placeholder="Cari Disini ...">
-            <p>Anda juga dapat menelusuri topik di bawah ini untuk menemukan apa yang Anda cari.</p>
+            <p class="text-center">Anda juga dapat menelusuri topik di bawah ini untuk menemukan apa yang Anda cari.</p>
         </div>
     </div>
 

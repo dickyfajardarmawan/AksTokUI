@@ -1,5 +1,22 @@
 <%@ include file="/init.jsp"%>
 
+<style>
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #830000;
+}
+
+a {
+    color: #830000;
+    text-decoration: none;
+    background-color: transparent;
+}
+a:hover {
+    color: #b80c0c;
+}
+</style>
+
 <div class="container my-3">
 	<div class="d-flex justify-content-start align-items-center">
 		<img
@@ -23,10 +40,15 @@
 						<a class="nav-link active" id="v-pills-settings-tab"
 							data-toggle="pill" href="#v-pills-settings" role="tab"
 							aria-controls="v-pills-settings" aria-selected="false">Ganti
-							Password</a> <a class="nav-link" id="v-pills-sdk-tab"
+							Kata Sandi</a> <a class="nav-link" id="v-pills-sdk-tab"
 							data-toggle="pill" href="#v-pills-sdk" role="tab"
 							aria-controls="v-pills-sdk" aria-selected="false">Syarat dan
-							Ketentuan</a> <a class="nav-link" href="index.html" role="tab"
+							Ketentuan</a> 
+							<a class="nav-link" href="/layananpelanggan" role="tab"
+							aria-controls="v-pills-keluar" aria-selected="false">Layanan Pelanggan</a>
+							<a class="nav-link" href="/faq" role="tab"
+							aria-controls="v-pills-keluar" aria-selected="false">FAQ</a>
+							<a class="nav-link" href="/c/portal/logout" role="tab"
 							aria-controls="v-pills-keluar" aria-selected="false">Keluar</a>
 					</div>
 				</div>
@@ -34,20 +56,20 @@
 					<div class="tab-content" id="v-pills-tabContent">
 						<div class="tab-pane fade show active" id="v-pills-settings"
 							role="tabpanel" aria-labelledby="v-pills-settings-tab">
-							<h2>Ganti Password</h2>
+							<h2>Ganti Kata Sandi</h2>
 							<p class="text-muted mb-5">Mengganti kata sandi untuk login</p>
 							<div class="form-group">
-								<label class="text-muted">Password Lama</label> <input
+								<label class="text-muted">Kata Sandi Lama</label> <input
 									type="password" class="form-control">
 							</div>
 							<div class="form-group">
-								<label class="text-muted">Password Baru</label> <input
+								<label class="text-muted">Kata Sandi Baru</label> <input
 									type="password" class="form-control"> <small>Kata
 									Sandi minimal 8 karakter kombinasi dari huruf besar, huruf
 									kecil dan angka</small>
 							</div>
 							<div class="form-group">
-								<label class="text-muted">Ulangi Password Baru</label> <input
+								<label class="text-muted">Ulangi Kata Sandi Baru</label> <input
 									type="password" class="form-control">
 							</div>
 							<div class="text-right">
