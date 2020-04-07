@@ -254,16 +254,15 @@
 					</div>
 					<div class="form-group">
 						<label>Status</label> <br>
-						<div class="custom-control custom-radio custom-control-inline">
-							<input type="radio" id="customRadioInline1"
-								name="customRadioInline1" class="custom-control-input" required>
-							<label class="custom-control-label" for="customRadioInline1">Aktif</label>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio"
+								name="inlineRadioOptions" id="inlineRadio1" value="option1">
+							<label class="form-check-label" for="inlineRadio1">Aktif</label>
 						</div>
-						<div class="custom-control custom-radio custom-control-inline">
-							<input type="radio" id="customRadioInline2"
-								name="customRadioInline1" class="custom-control-input" required>
-							<label class="custom-control-label" for="customRadioInline2">Tidak
-								Aktif</label>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio"
+								name="inlineRadioOptions" id="inlineRadio2" value="option2">
+							<label class="form-check-label" for="inlineRadio2">Tidak Aktif</label>
 						</div>
 					</div>
 					<div class="form-group">

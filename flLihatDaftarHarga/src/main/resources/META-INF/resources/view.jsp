@@ -58,11 +58,11 @@
 						<td>Toko 1</td>
 						<td>Aktif</td>
 						<td><a href="javascript:void(0)" data-toggle="modal"
-							data-target="#exampleModal1"><i class="fa fa-eye"></i></a></td>
+							data-target="#exampleModal1" data-toggle="tooltip" data-placement="top" title="Lihat Pemetaan"><i class="fa fa-eye"></i></a></td>
 						<td><a href="javascript:void(0)" data-toggle="modal"
-							data-target="#exampleModal2"><i class="fa fa-pencil-square-o"></i></a></td>
+							data-target="#exampleModal2" data-toggle="tooltip" data-placement="top" title="Ubah Pemetaan"><i class="fa fa-pencil-square-o"></i></a></td>
 						<td><a href="javascript:void(0)" data-toggle="modal"
-							data-target="#exampleModal3"><i class="fa fa-trash-o"></i></a></td>
+							data-target="#exampleModal3" data-toggle="tooltip" data-placement="top" title="Hapus Pemetaan"><i class="fa fa-trash-o"></i></a></td>
 					</tr>
 				</tbody>
 			</table>

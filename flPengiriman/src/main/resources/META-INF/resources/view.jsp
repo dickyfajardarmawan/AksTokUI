@@ -50,9 +50,9 @@
 						<td>Ambil Sendiri</td>
 						<td>Sedang dikirim</td>
 						<td><a href="javascript:void(0)" data-toggle="modal"
-							data-target="#exampleModal"><i class="fa fa-eye"></i></a></td>
+							data-target="#exampleModal" data-toggle="tooltip" data-placement="top" title="Lihat Pengiriman"><i class="fa fa-eye"></i></a></td>
 						<td><a href="javascript:void(0)" data-toggle="modal"
-							data-target="#exampleModal2"><i class="fa fa-pencil-square-o"></i></a></td>
+							data-target="#exampleModal2" data-toggle="tooltip" data-placement="top" title="Ubah Pengiriman"><i class="fa fa-pencil-square-o"></i></a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -79,8 +79,7 @@
 	<div class="modal-dialog modal-lg" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Lihat Back
-					Office</h5>
+				<h5 class="modal-title" id="exampleModalLabel">Lihat Pengiriman</h5>
 				<button type="button" class="close" data-dismiss="modal"
 					aria-label="Close">
 					<span aria-hidden="true">&times;</span>

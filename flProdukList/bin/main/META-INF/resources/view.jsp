@@ -58,13 +58,13 @@
 						<td>Produk 1</td>
 						<td>Tidak Aktif</td>
 						<td><a href="javascript:void(0)" data-toggle="modal"
-							data-target="#exampleModal"><i class="fa fa-eye"></i></a></td>
+							data-target="#exampleModal" data-toggle="tooltip" data-placement="top" title="Lihat Produk"><i class="fa fa-eye"></i></a></td>
 						<td><a href="javascript:void(0)" data-toggle="modal"
-							data-target="#exampleModal2"><i class="fa fa-pencil-square-o"></i></a></td>
+							data-target="#exampleModal2" data-toggle="tooltip" data-placement="top" title="Ubah Produk"><i class="fa fa-pencil-square-o"></i></a></td>
 						<td><a href="javascript:void(0)" data-toggle="modal"
-							data-target="#exampleModal3"><i class="fa fa-list-alt"></i></a></td>
+							data-target="#exampleModal3" data-toggle="tooltip" data-placement="top" title="Pemetaan Produk"><i class="fa fa-list-alt"></i></a></td>
 						<td><a href="javascript:void(0)" data-toggle="modal"
-							data-target="#exampleModal4"><i class="fa fa-trash-o"></i></a></td>
+							data-target="#exampleModal4" data-toggle="tooltip" data-placement="top" title="Hapus Produk"><i class="fa fa-trash-o"></i></a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -174,7 +174,7 @@
 	<div class="modal-dialog modal-lg" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Ubah Data Bank</h5>
+				<h5 class="modal-title" id="exampleModalLabel">Ubah Produk</h5>
 				<button type="button" class="close" data-dismiss="modal"
 					aria-label="Close">
 					<span aria-hidden="true">&times;</span>
@@ -274,7 +274,7 @@
 	<div class="modal-dialog modal-lg" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Ajukan Bank Baru</h5>
+				<h5 class="modal-title" id="exampleModalLabel">Pemetaan Produk</h5>
 				<button type="button" class="close" data-dismiss="modal"
 					aria-label="Close">
 					<span aria-hidden="true">&times;</span>
@@ -378,7 +378,7 @@
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Hapus Role</h5>
+				<h5 class="modal-title" id="exampleModalLabel">Hapus Produk</h5>
 				<button type="button" class="close" data-dismiss="modal"
 					aria-label="Close">
 					<span aria-hidden="true">&times;</span>

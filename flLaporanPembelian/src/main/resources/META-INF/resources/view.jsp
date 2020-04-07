@@ -52,7 +52,7 @@
 						<td>100 Zak</td>
 						<td>Rp. 100.000</td>
 						<td><a href="javascript:void(0)" data-toggle="modal"
-							data-target="#exampleModal"><i class="fa fa-eye"></i></a></td>
+							data-target="#exampleModal" data-toggle="tooltip" data-placement="top" title="Detail Produk Pembelian"><i class="fa fa-eye"></i></a></td>
 					</tr>
 					<tr>
 						<td class="text-right" colspan="5"><b>Total Harga</b></td>

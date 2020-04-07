@@ -60,13 +60,21 @@
 						<td>50%</td>
 						<td>Aktif</td>
 						<td><a href="javascript:void(0)" data-toggle="modal"
-							data-target="#exampleModal"><i class="fa fa-eye"></i></a></td>
+							data-target="#exampleModal" data-toggle="tooltip"
+							data-placement="top" title="Lihat Gudang"><i
+								class="fa fa-eye"></i></a></td>
 						<td><a href="javascript:void(0)" data-toggle="modal"
-							data-target="#exampleModal2"><i class="fa fa-pencil-square-o"></i></a></td>
+							data-target="#exampleModal2" data-toggle="tooltip"
+							data-placement="top" title="Ubah Gudang"><i
+								class="fa fa-pencil-square-o"></i></a></td>
 						<td><a href="javascript:void(0)" data-toggle="modal"
-							data-target="#exampleModal3"><i class="fa fa-list-alt"></i></a></td>
+							data-target="#exampleModal3" data-toggle="tooltip"
+							data-placement="top" title="Pemetaan Gudang"><i
+								class="fa fa-list-alt"></i></a></td>
 						<td><a href="javascript:void(0)" data-toggle="modal"
-							data-target="#exampleModal4"><i class="fa fa-trash-o"></i></a></td>
+							data-target="#exampleModal4" data-toggle="tooltip"
+							data-placement="top" title="Hapus Gudang"><i
+								class="fa fa-trash-o"></i></a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -93,8 +101,7 @@
 	<div class="modal-dialog modal-lg" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Lihat Back
-					Office</h5>
+				<h5 class="modal-title" id="exampleModalLabel">Lihat Gudang</h5>
 				<button type="button" class="close" data-dismiss="modal"
 					aria-label="Close">
 					<span aria-hidden="true">&times;</span>
@@ -219,7 +226,8 @@
 								</div>
 							</div>
 							<div class="form-group row">
-								<label for="staticEmail" class="col-sm-3 col-form-label">Kode Pos</label>
+								<label for="staticEmail" class="col-sm-3 col-form-label">Kode
+									Pos</label>
 								<div class="col-sm-9">
 									<select name="" id="" class="form-control" disabled>
 										<option value="">Kode Pos</option>
@@ -385,7 +393,8 @@
 								</div>
 							</div>
 							<div class="form-group row">
-								<label for="staticEmail" class="col-sm-3 col-form-label">Kode Pos</label>
+								<label for="staticEmail" class="col-sm-3 col-form-label">Kode
+									Pos</label>
 								<div class="col-sm-9">
 									<select name="" id="" class="form-control">
 										<option value="">Kode Pos</option>
@@ -419,6 +428,57 @@
 							data-target="#exampleModal">Simpan</button>
 					</div>
 				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal Pemetaan -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog"
+	aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Pemetaan Gudang</h5>
+				<button type="button" class="close" data-dismiss="modal"
+					aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="form-group row">
+					<label for="staticEmail" class="col-sm-2 col-form-label">Nama
+						Gudang</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" required>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="staticEmail" class="col-sm-2 col-form-label">Produk</label>
+					<div class="col-sm-5">
+						<div class="btn-group" role="group" aria-label="Basic example">
+							<button type="button" class="btn btn-secondary">P001</button>
+							<button type="button" class="btn btn-danger">10 Zak</button>
+							<button type="button" class="btn btn-link"><i class="fa fa-trash-o text-dark"></i></button>
+						</div>
+					</div>
+					<div class="col-sm-5">
+						<div class="btn-group" role="group" aria-label="Basic example">
+							<button type="button" class="btn btn-secondary">P001</button>
+							<button type="button" class="btn btn-danger">10 Zak</button>
+							<button type="button" class="btn btn-link"><i class="fa fa-trash-o text-dark"></i></button>
+						</div>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="staticEmail" class="col-sm-2 col-form-label"></label>
+					<div class="col-sm-10">
+						<button class="btn btn-danger">Tambah Produk</button>
+					</div>
+				</div>
+				<div class="text-right">
+					<button class="btn btn-danger">Simpan</button>
+				</div>
 			</div>
 		</div>
 	</div>

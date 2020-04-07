@@ -40,7 +40,7 @@ a:hover {
                     <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Perbarui Profil</a>
                     <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Daftar Alamat</a>
                     <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">SalesPerson</a>
-                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Ganti Password</a>
+                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Ganti Kata Sandi</a>
                     <a class="nav-link" id="v-pills-sdk-tab" data-toggle="pill" href="#v-pills-sdk" role="tab" aria-controls="v-pills-sdk" aria-selected="false">Syarat dan Ketentuan</a>
                     <a class="nav-link" href="/home" role="tab" aria-controls="v-pills-keluar" aria-selected="false">Keluar</a>
                 </div>
@@ -176,19 +176,19 @@ a:hover {
                         </div>
                     </div>
                     <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                        <h2>Ganti Password</h2>
+                        <h2>Ganti Kata Sandi</h2>
                         <p class="text-muted mb-5">Mengganti kata sandi untuk login</p>
                         <div class="form-group">
-                            <label class="text-muted">Password Lama</label>
+                            <label class="text-muted">Kata Sandi Lama</label>
                             <input type="password" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label class="text-muted">Password Baru</label>
+                            <label class="text-muted">Kata Sandi Baru</label>
                             <input type="password" class="form-control">
                             <small>Kata Sandi minimal 8 karakter kombinasi dari huruf besar, huruf kecil dan angka</small>
                         </div>
                         <div class="form-group">
-                            <label class="text-muted">Ulangi Password Baru</label>
+                            <label class="text-muted">Ulangi Kata Sandi Baru</label>
                             <input type="password" class="form-control">
                         </div>
                         <div class="text-right">

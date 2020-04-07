@@ -66,14 +66,14 @@
 						<td>P00001</td>
 						<td>Aktif</td>
 						<td><a href="javascript:void(0)" data-toggle="modal"
-							data-target="#exampleModal"><i class="fa fa-eye"></i></a></td>
+							data-target="#exampleModal" data-toggle="tooltip" data-placement="top" title="Lihat Grup Harga"><i class="fa fa-eye"></i></a></td>
 						<td><a href="javascript:void(0)" data-toggle="modal"
-							data-target="#exampleModal2"><i class="fa fa-pencil-square-o"></i></a></td>
+							data-target="#exampleModal2" data-toggle="tooltip" data-placement="top" title="Ubah Grup Harga"><i class="fa fa-pencil-square-o"></i></a></td>
 						<td><a
-							href="javascript: window.location.href = '/fl-lihatdaftarharga'"><i
+							href="javascript: window.location.href = '/fl-lihatdaftarharga'" data-toggle="tooltip" data-placement="top" title="Pemetaan Grup Harga"><i
 								class="fa fa-list-alt"></i></a></td>
 						<td><a href="javascript:void(0)" data-toggle="modal"
-							data-target="#exampleModal4"><i class="fa fa-trash-o"></i></a></td>
+							data-target="#exampleModal4" data-toggle="tooltip" data-placement="top" title="Hapus Grup Harga"><i class="fa fa-trash-o"></i></a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -199,7 +199,7 @@
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Hapus Role</h5>
+				<h5 class="modal-title" id="exampleModalLabel">Hapus Grup Harga</h5>
 				<button type="button" class="close" data-dismiss="modal"
 					aria-label="Close">
 					<span aria-hidden="true">&times;</span>
