@@ -17,7 +17,7 @@
 		<div style="background-color: #830000; color: #fff"
 			class="card-header">
 			<h4>
-				<i class="fa fa-users"></i> Lihat Daftar Harga
+				<i class="fa fa-users"></i> Lihat Pemetaan Grup Harga
 			</h4>
 		</div>
 		<div class="card-body">
@@ -47,19 +47,15 @@
 				<thead class="thead-dark">
 					<tr>
 						<th scope="col">ID</th>
-						<th scope="col">Nama Depan</th>
-						<th scope="col">Nama Belakang</th>
-						<th scope="col">Email</th>
+						<th scope="col">Toko</th>
 						<th scope="col">Status</th>
 						<th scope="col" colspan="3">Action</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<th scope="row">4403</th>
-						<td>Eka</td>
-						<td>Herlambang</td>
-						<td>ekaHerlambang@gmail.com</td>
+						<th scope="row">1001001</th>
+						<td>Toko 1</td>
 						<td>Aktif</td>
 						<td><a href="javascript:void(0)" data-toggle="modal"
 							data-target="#exampleModal1"><i class="fa fa-eye"></i></a></td>
