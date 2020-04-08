@@ -1,5 +1,18 @@
 <%@ include file="/init.jsp"%>
 
+<style>
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+	-moz-appearance: textfield;
+}
+</style>
+
 <div class="container my-3">
 	<div class="d-flex justify-content-start align-items-center">
 		<img
@@ -47,9 +60,9 @@
 				<div class="form-group">
 					<label>Kata Sandi</label>
 					<div class="input-group">
-						<input type="password" class="form-control" required>
+						<input type="password" class="form-control pwd" required>
 						<div class="input-group-prepend">
-							<span class="input-group-text" id="inputGroupPrepend2"><i
+							<span class="input-group-text reveal" type="button" id="inputGroupPrepend2"><i
 								class="fa fa-eye"></i></span>
 						</div>
 					</div>
@@ -57,16 +70,21 @@
 				<div class="form-group">
 					<label>Konfirmasi Kata Sandi</label>
 					<div class="input-group">
-						<input type="password" class="form-control" required>
+						<input type="password" class="form-control pwd2" required>
 						<div class="input-group-prepend">
-							<span class="input-group-text" id="inputGroupPrepend2"><i
+							<span class="input-group-text reveal2" type="button" id="inputGroupPrepend2"><i
 								class="fa fa-eye"></i></span>
 						</div>
 					</div>
 				</div>
 				<div class="form-group">
-					<label>Nomor Telepon</label> <input type="text"
-						class="form-control" required>
+					<label>Nomor Telepon</label>
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="inputGroupPrepend2">+62</span>
+						</div>
+						<input type="number" class="form-control" required>
+					</div>
 				</div>
 				<div class="form-group">
 					<label>Role</label> <select class="form-control" name="" id=""
@@ -129,3 +147,23 @@
 		</div>
 	</div>
 </div>
+
+<script>
+	$(".reveal").on('click', function() {
+		var $pwd = $(".pwd");
+		if ($pwd.attr('type') === 'password') {
+			$pwd.attr('type', 'text');
+		} else {
+			$pwd.attr('type', 'password');
+		}
+	});
+	
+	$(".reveal2").on('click', function() {
+		var $pwd2 = $(".pwd2");
+		if ($pwd2.attr('type') === 'password') {
+			$pwd2.attr('type', 'text');
+		} else {
+			$pwd2.attr('type', 'password');
+		}
+	});
+</script>
