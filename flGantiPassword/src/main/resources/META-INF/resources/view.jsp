@@ -1,19 +1,19 @@
 <%@ include file="/init.jsp"%>
 
 <style>
-.nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
-    color: #fff;
-    background-color: #830000;
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+	color: #fff;
+	background-color: #830000;
 }
 
 a {
-    color: #830000;
-    text-decoration: none;
-    background-color: transparent;
+	color: #830000;
+	text-decoration: none;
+	background-color: transparent;
 }
+
 a:hover {
-    color: #b80c0c;
+	color: #b80c0c;
 }
 </style>
 
@@ -43,12 +43,12 @@ a:hover {
 							Kata Sandi</a> <a class="nav-link" id="v-pills-sdk-tab"
 							data-toggle="pill" href="#v-pills-sdk" role="tab"
 							aria-controls="v-pills-sdk" aria-selected="false">Syarat dan
-							Ketentuan</a> 
-							<a class="nav-link" href="/layananpelanggan" role="tab"
-							aria-controls="v-pills-keluar" aria-selected="false">Layanan Pelanggan</a>
-							<a class="nav-link" href="/faq" role="tab"
-							aria-controls="v-pills-keluar" aria-selected="false">FAQ</a>
-							<a class="nav-link" href="/c/portal/logout" role="tab"
+							Ketentuan</a> <a class="nav-link" id="v-pills-sdk-tab"
+							data-toggle="pill" href="#v-pills-lp" role="tab"
+							aria-controls="v-pills-sdk" aria-selected="false">Layanan
+							Pelanggan</a> <a class="nav-link" href="/faq" role="tab"
+							aria-controls="v-pills-keluar" aria-selected="false">FAQ</a> <a
+							class="nav-link" href="/c/portal/logout" role="tab"
 							aria-controls="v-pills-keluar" aria-selected="false">Keluar</a>
 					</div>
 				</div>
@@ -87,6 +87,32 @@ a:hover {
 								Baca Kebijakan Privasi dengan mengunduh <a href="">dokumen
 									ini</a>
 							</p>
+						</div>
+						<div class="tab-pane fade" id="v-pills-lp" role="tabpanel"
+							aria-labelledby="v-pills-lp-tab">
+							<div class="card mx-auto my-5" style="max-width: 600px;">
+								<div class="card-body">
+									<h2 class="text-center">Layanan Pelanggan</h2>
+									<p class="text-center mb-5">Tanyakan keluhan Anda kepada
+										kami</p>
+									<div class="form-group">
+										<label class="text-muted">Subject</label> <select
+											class="form-control">
+											<option value="">Akun Saya</option>
+											<option value="">Pembayaran</option>
+											<option value="">Pengiriman</option>
+											<option value="">Pesanan</option>
+											<option value="">Poin & Loyalti</option>
+											<option value="">Umum</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label class="text-muted">Keluhan Anda</label>
+										<textarea class="form-control" id="" cols="30" rows="10"></textarea>
+									</div>
+									<button class="w-100 btn btn-danger">Kirim</button>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
