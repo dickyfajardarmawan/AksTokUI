@@ -54,32 +54,34 @@
 					<tr>
 						<th scope="col">ID</th>
 						<th scope="col">Nama</th>
-						<th scope="col">Kode Produk</th>
 						<th scope="col">Status</th>
-						<th scope="col" colspan="4">Action</th>
+						<th scope="col" colspan="4">Aksi</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
 						<th scope="row">G01</th>
 						<td>Grup 1</td>
-						<td>P00001</td>
 						<td>Aktif</td>
 						<td><a href="javascript:void(0)" data-toggle="modal"
-							data-target="#exampleModal" data-toggle="tooltip" data-placement="top" title="Lihat Grup Harga"><i class="fa fa-eye"></i></a></td>
+							data-target="#exampleModal" data-toggle="tooltip"
+							data-placement="top" title="Lihat Grup Harga"><i
+								class="fa fa-eye"></i></a></td>
 						<td><a href="javascript:void(0)" data-toggle="modal"
-							data-target="#exampleModal2" data-toggle="tooltip" data-placement="top" title="Ubah Grup Harga"><i class="fa fa-pencil-square-o"></i></a></td>
+							data-target="#exampleModal2" data-toggle="tooltip"
+							data-placement="top" title="Ubah Grup Harga"><i
+								class="fa fa-pencil-square-o"></i></a></td>
 						<td><a
-							href="javascript: window.location.href = '/fl-lihatdaftarharga'" data-toggle="tooltip" data-placement="top" title="Pemetaan Grup Harga"><i
-								class="fa fa-list-alt"></i></a></td>
+							href="javascript: window.location.href = '/fl-lihatdaftarharga'"
+							data-toggle="tooltip" data-placement="top"
+							title="Pemetaan Grup Harga"><i class="fa fa-list-alt"></i></a></td>
 						<td><a href="javascript:void(0)" data-toggle="modal"
-							data-target="#exampleModal4" data-toggle="tooltip" data-placement="top" title="Hapus Grup Harga"><i class="fa fa-trash-o"></i></a></td>
+							data-target="#exampleModal4" data-toggle="tooltip"
+							data-placement="top" title="Hapus Grup Harga"><i
+								class="fa fa-trash-o"></i></a></td>
 					</tr>
 				</tbody>
 			</table>
-			<div class="text-right">
-				<button class="btn btn-secondary">Download CSV</button>
-			</div>
 			<nav aria-label="Page navigation example">
 				<ul class="pagination justify-content-center">
 					<li class="page-item disabled"><a class="page-link" href="#"
@@ -112,28 +114,34 @@
 						<label for="staticEmail" class="col-sm-2 col-form-label">Nama
 							Grup Harga</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" disabled>
+							<select class="form-control" id="exampleFormControlSelect1" disabled>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
 						</div>
 					</div>
 					<div class="form-group row">
-						<label for="staticEmail" class="col-sm-2 col-form-label">Pilih
-							Produk</label>
-						<div class="col-sm-10">
-							<input type="text" class="form-control" disabled>
+						<label for="staticEmail" class="col-sm-2 col-form-label">Produk 1</label>
+						<div class="col-sm-3">
+							<select class="form-control" id="exampleFormControlSelect1" disabled>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select> 
 						</div>
-					</div>
-					<div class="form-group row">
-						<label for="staticEmail" class="col-sm-2 col-form-label">Harga
-							Cash</label>
-						<div class="col-sm-10">
-							<input type="text" class="form-control" disabled>
+						<div class="col-sm-3">
+							<input type="text" class="form-control" placeholder="Harga Tunai" disabled>
 						</div>
-					</div>
-					<div class="form-group row">
-						<label for="staticEmail" class="col-sm-2 col-form-label">Harga
-							Kredit</label>
-						<div class="col-sm-10">
-							<input type="text" class="form-control" disabled>
+						<div class="col-sm-3">
+							<input type="text" class="form-control" placeholder="Harga Kredit" disabled>
+						</div>
+						<div class="col-sm-1 d-flex align-items-center">
+							<i class="fa fa-trash-o"></i>
 						</div>
 					</div>
 				</form>
@@ -160,29 +168,38 @@
 						<label for="staticEmail" class="col-sm-2 col-form-label">Nama
 							Grup Harga</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" required>
+							<select class="form-control" id="exampleFormControlSelect1">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
 						</div>
 					</div>
 					<div class="form-group row">
-						<label for="staticEmail" class="col-sm-2 col-form-label">Pilih
-							Produk</label>
-						<div class="col-sm-10">
-							<input type="text" class="form-control" required>
+						<label for="staticEmail" class="col-sm-2 col-form-label">Produk 1</label>
+						<div class="col-sm-3">
+							<select class="form-control" id="exampleFormControlSelect1">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select> 
+						</div>
+						<div class="col-sm-3">
+							<input type="text" class="form-control" placeholder="Harga Tunai" required>
+						</div>
+						<div class="col-sm-3">
+							<input type="text" class="form-control" placeholder="Harga Kredit" required>
+						</div>
+						<div class="col-sm-1 d-flex align-items-center">
+							<i class="fa fa-trash-o"></i>
 						</div>
 					</div>
-					<div class="form-group row">
-						<label for="staticEmail" class="col-sm-2 col-form-label">Harga
-							Cash</label>
-						<div class="col-sm-10">
-							<input type="text" class="form-control" required>
-						</div>
-					</div>
-					<div class="form-group row">
-						<label for="staticEmail" class="col-sm-2 col-form-label">Harga
-							Kredit</label>
-						<div class="col-sm-10">
-							<input type="text" class="form-control" required>
-						</div>
+					<div class="text-right mb-5">
+						<button type="submit" class="btn btn-danger">Tambah Produk</button>
 					</div>
 					<div class="text-right">
 						<button type="submit" class="btn btn-danger">Simpan</button>
@@ -221,8 +238,8 @@
 	<div class="modal-dialog modal-lg" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Tambahkan Role
-					Baru</h5>
+				<h5 class="modal-title" id="exampleModalLabel">Tambahkan Grup
+					Harga Baru</h5>
 				<button type="button" class="close" data-dismiss="modal"
 					aria-label="Close">
 					<span aria-hidden="true">&times;</span>
@@ -234,29 +251,38 @@
 						<label for="staticEmail" class="col-sm-2 col-form-label">Nama
 							Grup Harga</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" required>
+							<select class="form-control" id="exampleFormControlSelect1">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
 						</div>
 					</div>
 					<div class="form-group row">
-						<label for="staticEmail" class="col-sm-2 col-form-label">Pilih
-							Produk</label>
-						<div class="col-sm-10">
-							<input type="text" class="form-control" required>
+						<label for="staticEmail" class="col-sm-2 col-form-label">Produk 1</label>
+						<div class="col-sm-3">
+							<select class="form-control" id="exampleFormControlSelect1">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select> 
+						</div>
+						<div class="col-sm-3">
+							<input type="text" class="form-control" placeholder="Harga Tunai" required>
+						</div>
+						<div class="col-sm-3">
+							<input type="text" class="form-control" placeholder="Harga Kredit" required>
+						</div>
+						<div class="col-sm-1 d-flex align-items-center">
+							<i class="fa fa-trash-o"></i>
 						</div>
 					</div>
-					<div class="form-group row">
-						<label for="staticEmail" class="col-sm-2 col-form-label">Harga
-							Cash</label>
-						<div class="col-sm-10">
-							<input type="text" class="form-control" required>
-						</div>
-					</div>
-					<div class="form-group row">
-						<label for="staticEmail" class="col-sm-2 col-form-label">Harga
-							Kredit</label>
-						<div class="col-sm-10">
-							<input type="text" class="form-control" required>
-						</div>
+					<div class="text-right mb-5">
+						<button type="submit" class="btn btn-danger">Tambah Produk</button>
 					</div>
 					<div class="text-right">
 						<button type="submit" class="btn btn-danger">Simpan</button>

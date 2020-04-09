@@ -37,9 +37,9 @@
 						<th scope="col">ID</th>
 						<th scope="col">Toko</th>
 						<th scope="col">Gudang</th>
-						<th scope="col">Tipe Pengiriman</th>
+						<th scope="col">Pengiriman</th>
 						<th scope="col">Status</th>
-						<th scope="col" colspan="3">Action</th>
+						<th scope="col" colspan="4">Pembayaran</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -47,8 +47,9 @@
 						<th scope="row">S01</th>
 						<td>Toko 1</td>
 						<td>Gudang 1</td>
-						<td>Ambil Sendiri</td>
-						<td>Sedang dikirim</td>
+						<td>Sendiri</td>
+						<td>Berhasil</td>
+						<td>CoD</td>
 						<td><a href="javascript:void(0)" data-toggle="modal"
 							data-target="#exampleModal" data-toggle="tooltip" data-placement="top" title="Lihat Penjualan"><i class="fa fa-eye"></i></a></td>
 						<td><a href="javascript:void(0)" data-toggle="modal"

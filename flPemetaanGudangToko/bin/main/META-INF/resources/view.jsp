@@ -5,7 +5,7 @@
 		<div style="background-color: #830000; color: #fff"
 			class="card-header">
 			<h4 class="m-0">
-				<i class="fa fa-th-list"></i> Pemetaan Produk Pada Gudang
+				<i class="fa fa-th-list"></i> Pemetaan Toko Pada Gudang
 			</h4>
 		</div>
 		<div class="card-body">
@@ -33,25 +33,26 @@
 			</form>
 			<table class="table">
 				<thead class="thead-dark">
-				<tr>
+					<tr>
 						<th scope="col">ID</th>
-						<th scope="col">Produk</th>
-						<th scope="col">Stok</th>
+						<th scope="col">Nama Toko</th>
+						<th scope="col">Target</th>
 						<th scope="col">Status</th>
-						<th scope="col">Aksi</th>
+						<th scope="col" colspan="2">Aksi</th>
 					</tr>
-					
 				</thead>
 				<tbody>
 					<tr>
-					<th scope="row">P0001</th>
-						<td>Semen Padang/40Kg/Zak</td>
-						<td>100 Zak</td>
+						<th scope="row">4403</th>
+						<td>Toko 1</td>
+						<td>100%</td>
 						<td>Aktif</td>
-						
 						<td><a href="javascript:void(0)" data-toggle="modal"
 							data-target="#exampleModal" data-toggle="tooltip"
 							data-placement="top" title="Lihat Toko"><i class="fa fa-eye"></i></a></td>
+						<td><a href="javascript:void(0)" data-toggle="modal"
+							data-target="#exampleModal2" data-toggle="tooltip"
+							data-placement="top" title="Lihat Toko"><i class="fa fa-cogs"></i></a></td>
 					</tr>
 				</tbody>
 			</table>

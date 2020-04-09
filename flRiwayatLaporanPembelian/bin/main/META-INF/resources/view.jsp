@@ -5,7 +5,7 @@
 		<div style="background-color: #830000; color: #fff"
 			class="card-header">
 			<h4 class="m-0">
-				<i class="fa fa-th-list"></i> Pemetaan Produk Pada Gudang
+				<i class="fa fa-file-o"></i> Riwayat Laporan Pembelian
 			</h4>
 		</div>
 		<div class="card-body">
@@ -33,25 +33,26 @@
 			</form>
 			<table class="table">
 				<thead class="thead-dark">
-				<tr>
-						<th scope="col">ID</th>
-						<th scope="col">Produk</th>
-						<th scope="col">Stok</th>
-						<th scope="col">Status</th>
+					<tr>
+						<th scope="col">ID GR</th>
+						<th scope="col">Nama Produk</th>
+						<th scope="col">Gudang</th>
+						<th scope="col">Kuantitas</th>
+						<th scope="col">Total Harga</th>
 						<th scope="col">Aksi</th>
 					</tr>
-					
 				</thead>
 				<tbody>
 					<tr>
-					<th scope="row">P0001</th>
-						<td>Semen Padang/40Kg/Zak</td>
+						<th scope="row">GR00/XXX/XX</th>
+						<td>Produk 1</td>
+						<td>W001</td>
 						<td>100 Zak</td>
-						<td>Aktif</td>
-						
+						<td>Rp.100.000</td>
 						<td><a href="javascript:void(0)" data-toggle="modal"
 							data-target="#exampleModal" data-toggle="tooltip"
-							data-placement="top" title="Lihat Toko"><i class="fa fa-eye"></i></a></td>
+							data-placement="top" title="Lihat Laporan Pembelian"><i
+								class="fa fa-eye"></i></a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -78,13 +79,56 @@
 	<div class="modal-dialog modal-lg" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Lihat Toko</h5>
+				<h5 class="modal-title" id="exampleModalLabel">Lihat Laporan Pembelian</h5>
 				<button type="button" class="close" data-dismiss="modal"
 					aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
-			<div class="modal-body"></div>
+			<div class="modal-body">
+				<form>
+					<div class="form-group row">
+						<label for="staticEmail" class="col-sm-2 col-form-label">ID
+							Tanda Terima</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" disabled>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="staticEmail" class="col-sm-2 col-form-label">Produk</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" disabled>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="staticEmail" class="col-sm-2 col-form-label">Kuantitas</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" disabled>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="staticEmail" class="col-sm-2 col-form-label">Harga
+							Satuan</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" disabled>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="staticEmail" class="col-sm-2 col-form-label">Gudang</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" disabled>
+						</div>
+					</div>
+					<hr>
+					<div class="form-group row">
+						<label for="staticEmail" class="col-sm-2 col-form-label">Total
+							Harga</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" disabled>
+						</div>
+					</div>
+				</form>
+			</div>
 		</div>
 	</div>
 </div>

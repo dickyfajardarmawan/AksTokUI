@@ -5,119 +5,86 @@
 		<div style="background-color: #830000; color: #fff"
 			class="card-header">
 			<h4 class="m-0">
-				<i class="fa fa-th-list"></i> Pemetaan Gudang
+				<i class="fa fa-th-list"></i> Pemetaan Produk Pada Gudang
 			</h4>
 		</div>
 		<div class="card-body">
 			<form>
-				<div class="form-group row">
-					<label for="staticEmail" class="col-sm-2 col-form-label">Nama
-						Gudang</label>
-					<div class="col-sm-10">
-						<input type="text" class="form-control" required>
-					</div>
-				</div>
-				<div class="form-group row">
-					<div class="col-md-2">
-						<label>Produk</label>
-					</div>
-					<div class="col-md-4">
-						<div class="btn-group" role="group" aria-label="Basic example">
-							<button type="button" class="btn btn-secondary">P001</button>
-							<button type="button" class="btn btn-danger">10 Zak</button>
-							<button type="button" class="btn btn-light">
-								<i class="fa fa-trash-o"></i>
-							</button>
-						</div>
-					</div>
-					<div class="col-md-2"></div>
-					<div class="col-md-4 text-right">
-						<div class="btn-group" role="group" aria-label="Basic example">
-							<button type="button" class="btn btn-secondary">P001</button>
-							<button type="button" class="btn btn-danger">10 Zak</button>
-							<button type="button" class="btn btn-light">
-								<i class="fa fa-trash-o"></i>
-							</button>
-						</div>
-					</div>
-				</div>
-				<div class="form-group row">
-					<label for="staticEmail" class="col-sm-2 col-form-label">Tambahkan
-						Produk</label>
-					<div class="col-sm-10">
-						<select name="" id="" class="form-control">
-							<option value="">Tambahkan Produk</option>
-							<option value="">P001 / Semen Tonasa / 40 Zak</option>
-							<option value="">P001 / Semen Tonasa / 40 Zak</option>
-							<option value="">P001 / Semen Tonasa / 40 Zak</option>
-							<option value="">P001 / Semen Tonasa / 40 Zak</option>
+				<div class="row">
+					<div class="col">
+						<select name="" class="form-control" id="">
+							<option value="">Filter</option>
+							<option value="">Filter</option>
+							<option value="">Filter</option>
 						</select>
 					</div>
-				</div>
-				<div class="form-group row">
-					<div class="col-md-2">
-						<label>Produk</label>
-					</div>
-					<div class="col-md-4">
-						<div class="btn-group" role="group" aria-label="Basic example">
-							<button type="button" class="btn btn-secondary">T01</button>
-							<button type="button" class="btn btn-danger">Toko Serba
-								Guna</button>
-							<button type="button" class="btn btn-light">
-								<i class="fa fa-trash-o"></i>
-							</button>
+					<div class="col">
+						<div class="input-group mb-2">
+							<input type="text" class="form-control" id="inlineFormInputGroup"
+								placeholder="Cari ...">
+							<div class="input-group-prepend">
+								<div class="input-group-text">
+									<i class="fa fa-search"></i>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="col-md-2"></div>
-					<div class="col-md-4 text-right">
-						<div class="btn-group" role="group" aria-label="Basic example">
-							<button type="button" class="btn btn-secondary">T01</button>
-							<button type="button" class="btn btn-danger">Toko Serba
-								Ada</button>
-							<button type="button" class="btn btn-light">
-								<i class="fa fa-trash-o"></i>
-							</button>
-						</div>
-					</div>
-				</div>
-				<div class="form-group row">
-					<label for="staticEmail" class="col-sm-2 col-form-label">Tambahkan
-						Produk</label>
-					<div class="col-sm-10">
-						<select name="" id="" class="form-control">
-							<option value="">Tambahkan Toko</option>
-							<option value="">T01 / PT Test 1</option>
-						</select>
-					</div>
-				</div>
-				<div class="text-right mt-4">
-					<button class="btn btn-danger" data-toggle="modal"
-						data-target="#exampleModal">Simpan</button>
 				</div>
 			</form>
+			<table class="table">
+				<thead class="thead-dark">
+				<tr>
+						<th scope="col">ID</th>
+						<th scope="col">Produk</th>
+						<th scope="col">Stok</th>
+						<th scope="col">Status</th>
+						<th scope="col">Aksi</th>
+					</tr>
+					
+				</thead>
+				<tbody>
+					<tr>
+					<th scope="row">P0001</th>
+						<td>Semen Padang/40Kg/Zak</td>
+						<td>100 Zak</td>
+						<td>Aktif</td>
+						
+						<td><a href="javascript:void(0)" data-toggle="modal"
+							data-target="#exampleModal" data-toggle="tooltip"
+							data-placement="top" title="Lihat Toko"><i class="fa fa-eye"></i></a></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="text-right">
+				<button class="btn btn-secondary">Download CSV</button>
+			</div>
+			<nav aria-label="Page navigation example">
+				<ul class="pagination justify-content-center">
+					<li class="page-item disabled"><a class="page-link" href="#"
+						tabindex="-1" aria-disabled="true">Previous</a></li>
+					<li class="page-item"><a class="page-link" href="#">1</a></li>
+					<li class="page-item"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item"><a class="page-link" href="#">Next</a></li>
+				</ul>
+			</nav>
 		</div>
 	</div>
 </div>
 
-<!-- Modal Konfirmasi -->
+<!-- Modal Lihat -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
 	aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog" role="document">
+	<div class="modal-dialog modal-lg" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Konfirmasi
-					Pemetaan Gudang</h5>
+				<h5 class="modal-title" id="exampleModalLabel">Lihat Toko</h5>
 				<button type="button" class="close" data-dismiss="modal"
 					aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
-			<div class="modal-body text-center">Apakah anda ingin
-				melanjutkan pemetaan Gudang ?</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
-				<button type="button" class="btn btn-danger">Iya</button>
-			</div>
+			<div class="modal-body"></div>
 		</div>
 	</div>
 </div>

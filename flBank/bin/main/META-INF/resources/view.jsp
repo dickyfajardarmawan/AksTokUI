@@ -58,27 +58,30 @@
 			<table class="table">
 				<thead class="thead-dark">
 					<tr>
-						<th scope="col">Kode Bank</th>
 						<th scope="col">Nama Bank</th>
 						<th scope="col">Nama Pemilik Akun</th>
 						<th scope="col">Nomor Rekening</th>
 						<th scope="col">Status</th>
-						<th scope="col" colspan="3">Action</th>
+						<th scope="col" colspan="3">Aksi</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<th scope="row">008</th>
 						<td>Bank Mandiri</td>
 						<td>Fauzan Febrizon</td>
 						<td>0770255757</td>
 						<td>Tidak Aktif</td>
 						<td><a href="javascript:void(0)" data-toggle="modal"
-							data-target="#exampleModal" data-toggle="tooltip" data-placement="top" title="Lihat Bank"><i class="fa fa-eye"></i></a></td>
+							data-target="#exampleModal" data-toggle="tooltip"
+							data-placement="top" title="Lihat Bank"><i class="fa fa-eye"></i></a></td>
 						<td><a href="javascript:void(0)" data-toggle="modal"
-							data-target="#exampleModal2" data-toggle="tooltip" data-placement="top" title="Ubah Bank"><i class="fa fa-pencil-square-o"></i></a></td>
+							data-target="#exampleModal2" data-toggle="tooltip"
+							data-placement="top" title="Ubah Bank"><i
+								class="fa fa-pencil-square-o"></i></a></td>
 						<td><a href="javascript:void(0)" data-toggle="modal"
-							data-target="#exampleModal4" data-toggle="tooltip" data-placement="top" title="Hapus Bank"><i class="fa fa-trash-o"></i></a></td>
+							data-target="#exampleModal4" data-toggle="tooltip"
+							data-placement="top" title="Hapus Bank"><i
+								class="fa fa-trash-o"></i></a></td>
 					</tr>
 				</tbody>
 			</table>
@@ -117,32 +120,29 @@
 						<label for="staticEmail" class="col-sm-2 col-form-label">Kode
 							Bank</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" required>
+							<input type="text" class="form-control" disabled>
 						</div>
 					</div>
 					<div class="form-group row">
 						<label for="staticEmail" class="col-sm-2 col-form-label">Nama
 							Bank</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" required>
+							<input type="text" class="form-control" disabled>
 						</div>
 					</div>
 					<div class="form-group row">
 						<label for="staticEmail" class="col-sm-2 col-form-label">Nama
 							Pemilik</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" required>
+							<input type="text" class="form-control" disabled>
 						</div>
 					</div>
 					<div class="form-group row">
 						<label for="staticEmail" class="col-sm-2 col-form-label">Nomor
 							Rekening</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" required>
+							<input type="text" class="form-control" disabled>
 						</div>
-					</div>
-					<div class="text-right">
-						<i class="fa fa-camera fa-4x"></i>
 					</div>
 				</form>
 			</div>
@@ -165,35 +165,31 @@
 			<div class="modal-body">
 				<form>
 					<div class="form-group row">
-						<label for="staticEmail" class="col-sm-2 col-form-label">Kode
+						<label for="staticEmail" class="col-sm-2 col-form-label">Nama
 							Bank</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" required>
+							<select class="form-control" id="exampleFormControlSelect1" required>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
 						</div>
 					</div>
 					<div class="form-group row">
 						<label for="staticEmail" class="col-sm-2 col-form-label">Nama
-							Bank</label>
-						<div class="col-sm-10">
-							<input type="text" class="form-control" required>
-						</div>
-					</div>
-					<div class="form-group row">
-						<label for="staticEmail" class="col-sm-2 col-form-label">Nama
-							Pemilik</label>
-						<div class="col-sm-10">
-							<input type="text" class="form-control" required>
-						</div>
-					</div>
-					<div class="form-group row">
-						<label for="staticEmail" class="col-sm-2 col-form-label">Nomor
 							Rekening</label>
 						<div class="col-sm-10">
 							<input type="text" class="form-control" required>
 						</div>
 					</div>
-					<div class="text-right">
-						<i class="fa fa-camera fa-4x"></i>
+					<div class="form-group row">
+						<label for="staticEmail" class="col-sm-2 col-form-label">Nama
+							Pemilik Akun</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" required>
+						</div>
 					</div>
 					<div class="text-right mt-4">
 						<button class="btn btn-danger">Simpan</button>
@@ -219,34 +215,31 @@
 			<div class="modal-body">
 				<form>
 					<div class="form-group row">
-						<label for="staticEmail" class="col-sm-2 col-form-label">Kode
+						<label for="staticEmail" class="col-sm-2 col-form-label">Nama
 							Bank</label>
+						<div class="col-sm-10">
+							<select class="form-control" id="exampleFormControlSelect1" required>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="staticEmail" class="col-sm-2 col-form-label">Nama
+							Rekening</label>
 						<div class="col-sm-10">
 							<input type="text" class="form-control" required>
 						</div>
 					</div>
 					<div class="form-group row">
 						<label for="staticEmail" class="col-sm-2 col-form-label">Nama
-							Bank</label>
+							Pemilik Akun</label>
 						<div class="col-sm-10">
 							<input type="text" class="form-control" required>
 						</div>
-					</div>
-					<div class="form-group row">
-						<label for="staticEmail" class="col-sm-2 col-form-label">Unggah Logo Bank</label>
-						<div class="col-sm-10">
-							<div class="custom-file">
-								<input type="file" class="custom-file-input"
-									id="validatedCustomFile" required> <label
-									class="custom-file-label" for="validatedCustomFile">Choose
-									file...</label>
-								<div class="invalid-feedback">Example invalid custom file
-									feedback</div>
-							</div>
-						</div>
-					</div>
-					<div class="text-right">
-						<i class="fa fa-camera fa-4x"></i>
 					</div>
 					<div class="text-right mt-4">
 						<button class="btn btn-danger">Simpan</button>
@@ -294,35 +287,31 @@
 			<div class="modal-body">
 				<form>
 					<div class="form-group row">
-						<label for="staticEmail" class="col-sm-2 col-form-label">Kode
+						<label for="staticEmail" class="col-sm-2 col-form-label">Nama
 							Bank</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" required>
+							<select class="form-control" id="exampleFormControlSelect1" required>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
 						</div>
 					</div>
 					<div class="form-group row">
 						<label for="staticEmail" class="col-sm-2 col-form-label">Nama
-							Bank</label>
-						<div class="col-sm-10">
-							<input type="text" class="form-control" required>
-						</div>
-					</div>
-					<div class="form-group row">
-						<label for="staticEmail" class="col-sm-2 col-form-label">Nama
-							Pemilik</label>
-						<div class="col-sm-10">
-							<input type="text" class="form-control" required>
-						</div>
-					</div>
-					<div class="form-group row">
-						<label for="staticEmail" class="col-sm-2 col-form-label">Nomor
 							Rekening</label>
 						<div class="col-sm-10">
 							<input type="text" class="form-control" required>
 						</div>
 					</div>
-					<div class="text-right">
-						<i class="fa fa-camera fa-4x"></i>
+					<div class="form-group row">
+						<label for="staticEmail" class="col-sm-2 col-form-label">Nama
+							Pemilik Akun</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" required>
+						</div>
 					</div>
 					<div class="text-right mt-4">
 						<button class="btn btn-danger">Simpan</button>

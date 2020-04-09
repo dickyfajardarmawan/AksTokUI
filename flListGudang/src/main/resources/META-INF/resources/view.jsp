@@ -50,7 +50,7 @@
 						<th scope="col">Nama Gudang</th>
 						<th scope="col">Kapasitas</th>
 						<th scope="col">Status</th>
-						<th scope="col" colspan="4">Aksi</th>
+						<th scope="col" colspan="5">Aksi</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -71,6 +71,10 @@
 							data-target="#exampleModal3" data-toggle="tooltip"
 							data-placement="top" title="Pemetaan Gudang"><i
 								class="fa fa-list-alt"></i></a></td>
+						<td><a href="javascript:void(0)" data-toggle="modal"
+							data-target="#exampleModal4" data-toggle="tooltip"
+							data-placement="top" title="User Gudang"><i
+								class="fa fa-user"></i></a></td>
 						<td><a href="javascript:void(0)" data-toggle="modal"
 							data-target="#exampleModal4" data-toggle="tooltip"
 							data-placement="top" title="Hapus Gudang"><i
@@ -459,14 +463,18 @@
 						<div class="btn-group" role="group" aria-label="Basic example">
 							<button type="button" class="btn btn-secondary">P001</button>
 							<button type="button" class="btn btn-danger">10 Zak</button>
-							<button type="button" class="btn btn-link"><i class="fa fa-trash-o text-dark"></i></button>
+							<button type="button" class="btn btn-link">
+								<i class="fa fa-trash-o text-dark"></i>
+							</button>
 						</div>
 					</div>
 					<div class="col-sm-5">
 						<div class="btn-group" role="group" aria-label="Basic example">
 							<button type="button" class="btn btn-secondary">P001</button>
 							<button type="button" class="btn btn-danger">10 Zak</button>
-							<button type="button" class="btn btn-link"><i class="fa fa-trash-o text-dark"></i></button>
+							<button type="button" class="btn btn-link">
+								<i class="fa fa-trash-o text-dark"></i>
+							</button>
 						</div>
 					</div>
 				</div>
